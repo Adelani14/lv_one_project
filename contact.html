@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            margin: 0%;
+            background-color: darkslategray;
+            color: aliceblue;
+        }
+
+        nav {
+            width: 100%;
+            height: 80px;
+            background-color: darkslategrey;
+            display: flex;
+
+        }
+
+        .nav-cont {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        .storename{
+            color: aqua;
+            margin-top: 25px;
+            margin-left: 30px;
+            font-size: 30px;
+            font-family: algerian;
+            cursor:-webkit-grab;
+
+        }
+        nav ul li a{
+            text-decoration:none;
+            color: aqua;
+            margin-right: 20px;
+        
+        }
+        nav ul li a:hover{
+            /* background-color: blue; */
+            color: white;
+            text-decoration: underline;
+            border-radius: 8px;
+            transition: 0.3s;
+            padding: 2px;
+        }
+       h2 {
+            font-family: algerian;
+            color: red;
+        }
+
+        section,
+        footer {
+            margin: 40px;
+        }
+
+        form {
+            margin-top: 20px;
+
+        }
+
+        footer {
+            display: flex;
+        }
+
+        footer a img {
+            border-radius: 50%;
+        }
+
+        footer a {
+            width: 30px;
+            height: 30px;
+            background: transparent;
+            border-radius: 50%;
+            margin-right: 18px;
+            text-align: center;
+            line-height: 40px;
+            outline: 3px solid red;
+
+        }
+
+        textarea {
+            width: 90%;
+            height: 120px;
+            padding: 12px 20px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            background-color: #f8f8f8;
+            font-size: 16px;
+            resize: none;
+        }
+
+        input {
+            width: 50%;
+            border-radius: 5px;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+       .submit {
+            background-color: red;
+            color: white;
+            padding: 3px;
+            border-radius: 8px;
+            width: 100px;
+        }
+
+        .submit:hover {
+            background-color: rgb(154, 44, 44);
+            color: #000;
+            cursor: pointer;
+        }
+
+        button:active {
+            background-color: rgb(182, 140, 62);
+            color: blue;
+            /* transform: translateY(4px); */
+            /* color: aliceblue; */
+        }
+
+        textarea:focus,
+        input:focus {
+            background-color: #ccc;
+        }
+    </style>
+    <title>Contact</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-cont">
+            <div class="storename">Adetola Homes</div>
+            <ul>
+                <li><a href="C:\Users\User\Desktop\My Project\My-Portfolio\home.html">Home</a></li>
+                <li><a href="C:\Users\User\Desktop\My Project\My-Portfolio\about.html">About</a></li>
+                <li><a href="C:\Users\User\Desktop\My Project\My-Portfolio\experience.html">Experience</a></li>
+                <li><a href="C:\Users\User\Desktop\My Project\My-Portfolio\project.html">Projects</a></li>
+                <li><a href="C:\Users\User\Desktop\My Project\My-Portfolio\contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section>
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out to me using the form below:</p>
+        <form>
+            <div>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" placeholder="enter full name" value="" >
+            </div>
+            <div>
+                <label for="Email">Email:</label><br>
+                <input type="email" placeholder="enter email" id="Email" value="">
+                <input type="text" placeholder="subject" id="subject" value="">
+            </div>
+            <div>
+                <!-- <label for="message">Message:</label> -->
+                <textarea id="message" placeholder="Messsage"></textarea>
+            </div> 
+            
+           <input type="submit" class="submit">
+        </form>
+
+    </section>
+</body>
+
+</html>
